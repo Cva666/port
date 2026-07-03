@@ -23,6 +23,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #0b2545;
 }
 nav a {
   color: #0b2545; /* Deep Navy */
@@ -61,23 +62,22 @@ body.dark #themeToggle {
   border-color: #4a5568;
 }
 
-h1 {
-  color: #0b2545;
-}
-
 header {
   border-bottom: 2px solid #0b2545;
 }
 
 #indexmain {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
   #bckgrd {
     grid-column: 1/2;
     grid-row: 2/3;
     background-color: aqua;
+  }
+  #dadimg {
+    justify-self: center;
   }
   #highlights {
     grid-column: 1/4;
@@ -99,13 +99,16 @@ footer {
 
 .dark #indexmain {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
   #bckgrd {
     grid-column: 1/2;
     grid-row: 2/3;
     background-color: rgb(13, 14, 14);
+  }
+  #dadimg {
+    justify-self: center;
   }
   #highlights {
     grid-column: 1/4;
@@ -122,4 +125,13 @@ footer {
 
 .dark footer {
   background-color: #070808;
+}
+
+.dark nav {
+  background-color: #070808;
+  color: #ffffff;
+}
+.dark nav a:hover {
+  color: cyan;
+  cursor: crosshair;
 }
