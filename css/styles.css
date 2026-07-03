@@ -1,0 +1,59 @@
+button {
+  color: rgb(255, 254, 254);
+  background-color: rgb(42, 138, 138);
+  border-radius: 3px;
+}
+
+body {
+  size: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: #000000;
+  background-image: url(../images/WorkSpace\ byDesignLogo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  background-size: 100vw;
+}
+
+nav {
+  background-color: #ffffff;
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid #0b2545;
+}
+nav a {
+  color: #0b2545; /* Deep Navy */
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 600;
+  border: 2px solid #0b2545;
+  border-radius: 3px;
+}
+nav a:hover {
+  color: cyan;
+  cursor: crosshair;
+}
+
+nav a.active {
+  font-weight: bold;
+  background-color: #0b2545;
+  color: white;
+}
+
+body.dark {
+  background-image: url(../images/WorkSpacebyDesignLogoDark.jpg);
+  color: #e2e8f0;
+}
+
+body.dark header,
+body.dark footer {
+  border-color: #2d3748;
+}
+
+body.dark nav a {
+  color: #90cdf4;
+}
+
+body.dark #themeToggle {
+  border-color: #4a5568;
+}
