@@ -135,3 +135,52 @@ footer {
   color: cyan;
   cursor: crosshair;
 }
+
+#computer {
+  max-width: 20rem;
+  max-height: 15rem;
+}
+
+#Aboutmemain {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  div {
+    border: 2px solid #205677;
+    background-color: #e2e8f0;
+  }
+  h2 {
+    font-weight: bolder;
+    font-style: oblique;
+    text-decoration: underline;
+  }
+  img {
+    justify-self: center;
+  }
+  #ttk {
+    grid-column: 2/3;
+  }
+  ul {
+    border: 2px solid #205677;
+    margin: 5px;
+    border-radius: 8px;
+  }
+}
+
+.dark #Aboutmemain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  div {
+    border: 2px solid #90cdf4;
+    background-color: inherit;
+  }
+  h2 {
+    font-weight: bolder;
+    font-style: oblique;
+    text-decoration: underline;
+  }
+  img {
+    justify-self: center;
+  }
+}
