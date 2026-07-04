@@ -10,3 +10,12 @@ if (toggle) {
     localStorage.setItem("theme", isdark ? "dark" : "light");
   });
 }
+
+// portfolio open box //
+const project = document.querySelectorAll(".project");
+project.forEach(function (q) {
+  q.addEventListener("click", function () {
+    const aboutproject = q.nextElementSibling;
+    aboutproject.classList.toggle("open");
+  });
+});
