@@ -166,6 +166,14 @@ footer {
     margin: 5px;
     border-radius: 8px;
   }
+  #tile {
+    max-width: 20rem;
+    max-height: 15rem;
+  }
+  #clean-code {
+    max-width: 20rem;
+    max-height: 15rem;
+  }
 }
 
 .dark #Aboutmemain {
