@@ -95,6 +95,11 @@ footer {
   background-color: #ffffff;
   border-top: 1px solid #0b2545;
   padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  margin-top:2rem;
+  width: 100vw;
 }
 
 .dark #indexmain {
@@ -190,5 +195,43 @@ footer {
   }
   img {
     justify-self: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contactmain{
+  text-align: center;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  form{display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 }
