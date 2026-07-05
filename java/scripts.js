@@ -30,6 +30,7 @@ document.getElementById("sendbtn").addEventListener("click", function (e) {
   );
   window.location.href =
     "mailto:" + youremail + "?subject=" + subject + "&body=" + emailbody;
+});
 
 // portfolio open box //
 const project = document.querySelectorAll(".project");
