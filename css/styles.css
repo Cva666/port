@@ -95,6 +95,11 @@ footer {
   background-color: #ffffff;
   border-top: 1px solid #0b2545;
   padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-top: 2rem;
+  width: 100vw;
 }
 
 .dark #indexmain {
@@ -193,6 +198,41 @@ footer {
   }
 }
 
+#contactmain {
+  text-align: center;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  form {
+    display: grid;
+    grid-template-rows: 3rem 3rem 1fr;
+    margin-top: 1rem;
+  }
+  #contact-header {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: #90cdf4;
+    padding: 3rem;
+    text-decoration: underline;
+    border: 5px solid #070808;
+  }
+  button {
+    display: block;
+    margin-top: 2rem;
+    width: 200px;
+    justify-self: center;
+    height: 3rem;
+    font-size: 24px;
+    text-decoration: underline;
+    border: 5px solid black;
+    margin-bottom: 3rem;
+  }
+}
+.dark #contact-header {
+  display: inline-block;
+  background-color: #050505 !important;
+  padding: 3rem;
+  text-decoration: underline;
+  border: 5px solid #070808;
 .aboutproject {
   display: none;
   padding: 8px 0 8px 16px;

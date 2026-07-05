@@ -8,15 +8,37 @@
   </head>
   <body>
     <header>
-      <h1>Reach Out to me</h1>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-        <button id="themetoggle">Light/Dark</button>
+        <h1>Reach Out to Me!</h1>
+        <div class="nav-link">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+          <button id="themetoggle">Light/Dark</button>
+        </div>
       </nav>
     </header>
+    <main id="contactmain">
+      <div id="contact-header">
+        <h2>connect with me here</h2>
+      <p>Please fill out the form. I look forward to connecting!</p>
+    </div>
+        <form id="contact-form">
+          <label>
+            <input name="name" placeholder="name" id="conname">
+          </label>
+          <label>
+            <input name="company" placeholder="company" id="comname">
+          </label>
+          <label>
+            <textarea placeholder="Leave message here." id="message"></textarea>
+          </label>
+          <button type="button" id="sendbtn">Send!</button>
+        </form>
+      </div>
+    </main>
+    <footer>&copy; Webspacebydesign 2026</footer>
   </body>
   <script src="./java/scripts.js"></script>
 </html>
