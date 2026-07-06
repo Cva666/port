@@ -19,7 +19,7 @@ if (sendBtn) {
     const message = document.getElementById("message").value;
 
     const youremail = "xavseswd@webspacebydesign.com";
-    const subject = encodeURIComponent("Reaching out from" + comname);
+    const subject = encodeURIComponent("Reaching out from " + comname);
 
     const emailbody = encodeURIComponent(
       "Hello I am " +
@@ -40,5 +40,16 @@ project.forEach(function (q) {
   q.addEventListener("click", function () {
     const aboutproject = q.nextElementSibling;
     aboutproject.classList.toggle("open");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const currentpath = window.location.pathname.split("/").pop();
+  const navlinks = document.querySelectorAll("nav a");
+  navlinks.forEach((link) => {
+    const linkpath = link.getAttribute("href");
+    if (linkpath === currentpath) {
+      link.classList.add("active");
+    }
   });
 });
