@@ -10,6 +10,7 @@ if (toggle) {
     localStorage.setItem("theme", isdark ? "dark" : "light");
   });
 }
+// Contact Form
 const sendBtn = document.getElementById("sendbtn");
 if (sendBtn) {
   sendBtn.addEventListener("click", function (e) {
@@ -43,6 +44,7 @@ project.forEach(function (q) {
   });
 });
 
+//  Active page highlight
 document.addEventListener("DOMContentLoaded", () => {
   const currentpath = window.location.pathname.split("/").pop();
   const navlinks = document.querySelectorAll("nav a");

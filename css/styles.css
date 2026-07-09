@@ -1,3 +1,5 @@
+/* Basic formatting */
+
 button {
   color: rgb(255, 254, 254);
   background-color: rgb(42, 138, 138);
@@ -44,27 +46,26 @@ nav a.active {
   color: white;
 }
 
-body.dark {
-  background-image: url(../images/WorkSpacebyDesignLogoDark.jpg);
-  color: #e2e8f0;
-}
-
-body.dark header,
-body.dark footer {
-  border-color: #2d3748;
-}
-
-body.dark nav a {
-  color: #90cdf4;
-}
-
-body.dark #themeToggle {
-  border-color: #4a5568;
-}
-
 header {
   border-bottom: 2px solid #0b2545;
 }
+
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid #0b2545;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-top: 2rem;
+  width: 100vw;
+}
+
+main {
+  text-align: center;
+}
+
+/* index */
 
 #indexmain {
   display: grid;
@@ -91,56 +92,8 @@ header {
     background-color: aquamarine;
   }
 }
-footer {
-  background-color: #ffffff;
-  border-top: 1px solid #0b2545;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  margin-top: 2rem;
-  width: 100vw;
-}
 
-.dark #indexmain {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1rem;
-  #bckgrd {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    background-color: rgb(13, 14, 14);
-  }
-  #dadimg {
-    justify-self: center;
-  }
-  #highlights {
-    grid-column: 1/4;
-    grid-row: 1/2;
-    align-content: center;
-    font-style: italic;
-    text-align: center;
-    background-color: #070808;
-  }
-  #Dadp {
-    background-color: rgb(0, 0, 0);
-  }
-}
-
-.dark footer {
-  background-color: #070808;
-}
-
-.dark nav {
-  background-color: #070808;
-  color: #ffffff;
-}
-.dark nav a:hover {
-  color: cyan;
-  cursor: crosshair;
-}
-
+/* About */
 #computer {
   max-width: 20rem;
   max-height: 15rem;
@@ -181,23 +134,7 @@ footer {
   }
 }
 
-.dark #Aboutmemain {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  div {
-    border: 2px solid #90cdf4;
-    background-color: inherit;
-  }
-  h2 {
-    font-weight: bolder;
-    font-style: oblique;
-    text-decoration: underline;
-  }
-  img {
-    justify-self: center;
-  }
-}
-
+/* contact */
 #contactmain {
   text-align: center;
   grid-template-rows: 1fr 1fr 1fr;
@@ -227,13 +164,9 @@ footer {
     margin-bottom: 3rem;
   }
 }
-.dark #contact-header {
-  display: inline-block;
-  background-color: #050505 !important;
-  padding: 3rem;
-  text-decoration: underline;
-  border: 5px solid #070808;
-}
+
+/* Portfolio */
+
 .aboutproject {
   display: none;
   padding: 8px 0 8px 16px;
@@ -258,11 +191,91 @@ body.dark .aboutproject {
   display: inline-block;
   background-color: #eceef1;
 }
-main {
-  text-align: center;
+
+/* Dark Mode */
+body.dark {
+  background-image: url(../images/WorkSpacebyDesignLogoDark.jpg);
+  color: #e2e8f0;
+}
+
+body.dark header,
+body.dark footer {
+  border-color: #2d3748;
+}
+
+.dark footer {
+  background-color: #070808;
+}
+.dark nav {
+  background-color: #070808;
+  color: #ffffff;
+}
+
+body.dark nav a {
+  color: #90cdf4;
+}
+
+.dark nav a:hover {
+  color: cyan;
+  cursor: crosshair;
+}
+
+body.dark #themeToggle {
+  border-color: #4a5568;
 }
 
 .dark .port-main {
   display: inline-block;
   background-color: #0a0b0d;
+}
+
+.dark #contact-header {
+  display: inline-block;
+  background-color: #050505 !important;
+  padding: 3rem;
+  text-decoration: underline;
+  border: 5px solid #070808;
+}
+
+.dark #Aboutmemain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  div {
+    border: 2px solid #90cdf4;
+    background-color: inherit;
+  }
+  h2 {
+    font-weight: bolder;
+    font-style: oblique;
+    text-decoration: underline;
+  }
+  img {
+    justify-self: center;
+  }
+}
+
+.dark #indexmain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  #bckgrd {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: rgb(13, 14, 14);
+  }
+  #dadimg {
+    justify-self: center;
+  }
+  #highlights {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    align-content: center;
+    font-style: italic;
+    text-align: center;
+    background-color: #070808;
+  }
+  #Dadp {
+    background-color: rgb(0, 0, 0);
+  }
 }
